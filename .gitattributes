@@ -1,0 +1,17 @@
+# Line endings: LF in the repo and on disk on every platform, whatever the machine has in core.autocrlf.
+# Build tools write LF, so generated output (dist/) stays byte-identical to what CI produces.
+* text=auto eol=lf
+
+# Windows batch files need CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+*.png binary
+*.ico binary
+*.jpg binary
+*.gif binary
+*.woff binary
+*.woff2 binary
+*.zip binary
+*.gz binary
+*.tgz binary
