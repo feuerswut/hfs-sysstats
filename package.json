@@ -9,8 +9,8 @@
     "node": ">=20"
   },
   "scripts": {
-    "build": "node build/build.mjs",
-    "build:watch": "node build/build.mjs --watch",
+    "build": "node util/build.mjs",
+    "build:watch": "node util/build.mjs --watch",
     "typecheck": "tsc --noEmit",
     "clean": "node -e \"fs.rmSync('dist/public',{recursive:true,force:true})\""
   },
